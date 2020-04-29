@@ -133,8 +133,12 @@ extension GameController {
         let confirmAction = UIAlertAction.init(title: "okay!", style: .`default`) { (_) in
             self.dismiss(animated: true, completion: nil)
         }
+        var player = player1Score > player2Score ? "1" : "2"
+        if (player2Score == player1Score) {
+            player = "1 & 2"
+        }
         
-        let alertController = UIAlertController(title: "player #\(self.turn) won the game!", message: "", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "player #\(player) won the game!", message: "", preferredStyle: .alert)
         alertController.addAction(confirmAction)
         self.present(alertController, animated: true, completion: nil)
     }
