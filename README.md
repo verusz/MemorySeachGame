@@ -1,4 +1,4 @@
-I did not add any other third party library because this is a small project and I do not and it would be overdesigned.
+I did not add any other third party library because this is a small project and I do not want this project to be overdesigned.
 1. configure page
 <img src="https://user-images.githubusercontent.com/16929598/80646430-b1909400-8a3a-11ea-92a3-d308b8e644d1.png" width="250">
 2. configure page with values
